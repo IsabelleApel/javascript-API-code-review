@@ -9,28 +9,28 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">Search</a>
-            <a href="#">Categories</a>
+        <nav class="header__nav">
+            <a href="#searchJoke" class="header__link">Search</a>
+            <a href="#categorieJoke"class="header__link">Categories</a>
         </nav>
         <img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small.png" alt="Picture of Chuck Norris" class="header__img">
         <h1>Chuck Norris joke machine</h1>
     </header>
     <main>
-        <article class="random-joke" id="randomJoke">
+        <article class="random-joke joke-section" id="randomJoke">
             <h2>Get a random joke</h2>
-            <button class="random-joke__button button">Get a random joke!</button>
+            <button class="random-joke__button button">MAKE ME LAUGH!</button>
             <button class="random-joke__button random-joke__button--new-joke button d-none">Get a new joke!</button>
         </article>
-        <article class="categorie-joke" id="categorieJoke">
-            <h2>Get a joke from a specific categorie</h2>
-            <input type="text" id="categorie-joke__input input" placeholder="Start typing...">
-            <button class="categorie-joke__button button">Generate a joke</button>
+        <article class="categorie-joke joke-section joke-section--grid" id="categorieJoke">
+            <h2 class="heading--grid">Get a joke from a specific categorie</h2>
+            <input type="text" class="categorie-joke__input input input--grid" placeholder="Start typing...">
+            <button class="categorie-joke__button button">DO ME GOOD!</button>
         </article>
-        <article class="search-joke" id="searchJoke">
-            <h2>Search for a joke</h2>
-            <input type="text" class="search-joke__input input" placeholder="Search here">
-            <button class="search-joke__button button">Search!</button>
+        <article class="search-joke joke-section joke-section--grid" id="searchJoke">
+            <h2 class="heading--grid">Search for a joke</h2>
+            <input type="text" class="search-joke__input input input--grid" placeholder="Search here">
+            <button class="search-joke__button button">FIND ME THAT JOKE!</button>
         </article>
     </main>
 </body>
