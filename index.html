@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Chuck Norris is Great!</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Search</a>
+            <a href="#">Categories</a>
+        </nav>
+        <img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small.png" alt="Picture of Chuck Norris" class="header__img">
+        <h1>Chuck Norris joke machine</h1>
+    </header>
+    <main>
+        <article class="random-joke" id="randomJoke">
+            <h2>Get a random joke</h2>
+            <button class="random-joke__button button">Get a random joke!</button>
+            <button class="random-joke__button random-joke__button--new-joke button d-none">Get a new joke!</button>
+        </article>
+        <article class="categorie-joke" id="categorieJoke">
+            <h2>Get a joke from a specific categorie</h2>
+            <input type="text" id="categorie-joke__input input" placeholder="Start typing...">
+            <button class="categorie-joke__button button">Generate a joke</button>
+        </article>
+        <article class="search-joke" id="searchJoke">
+            <h2>Search for a joke</h2>
+            <input type="text" class="search-joke__input input" placeholder="Search here">
+            <button class="search-joke__button button">Search!</button>
+        </article>
+    </main>
+</body>
+</html>
