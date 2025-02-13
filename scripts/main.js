@@ -1,3 +1,3 @@
-import { generateRandomJoke } from "./modules/eventHandlers.js";
+import { randomJokeButton } from "./modules/eventHandlers.js";
 
- generateRandomJoke();
+randomJokeButton();
